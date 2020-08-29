@@ -45,8 +45,14 @@ result = "  [{}/{}]{}".format(
     specter_dict["xfp"], specter_dict["p2wsh_deriv"][2:], specter_dict["p2wsh"]
 )
 
-# print(json.dumps(specter_dict, indent=4))  ## Can be used for ccxp-*.json file, but relying on Specter for this instead
 print("\n", "*" * 99, "\n")
+
+## Write to coldcard xpub file (not needed, but useful for airgap wallet creation)
+f_output = '/tmp/ccxp-%s.json' % specter_dict['xfp']
+with open(f_output, 'w') as f:
+    f.write(json.dumps(specter_dict, indent=4))
+print("Saved Coldcard xpub export file to: %s" % f_output, '\n')
+
 print("PRIVATE SECRET TO WRITE DOWN:", "\n")
 print(textwrap.indent(text=json.dumps(last_word_dict, indent=2), prefix="  "))
 
