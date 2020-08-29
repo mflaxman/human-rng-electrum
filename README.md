@@ -8,7 +8,7 @@
 ```python
 first_words = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon"
 ```
-3. Paste the code from [oneline.py](oneline.py) into the console (it will use whatever you set `first_words` to in the previous step).
+3. Paste the code from [oneline.py](https://raw.githubusercontent.com/mflaxman/human-rng-electrum/master/oneline.py) into the console (it will use whatever you set `first_words` to in the previous step).
 4. Private results (last word checksum) will be printed to the screen
 5. Public results (extended public key, root fingerprint, and derivation path) are printed to the screen and saved to a file (for export to your multisig setup) in your `/tmp` directory
 
