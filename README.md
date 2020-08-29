@@ -15,10 +15,10 @@ first_words = "abandon abandon abandon abandon abandon abandon abandon abandon a
 **Note: it is strongly recommended to perform all these steps (including below) offline on an airgapped machine, preferably using [Tails](https://tails.boum.org/).**
 
 #### Example
-Using the folloiwng:
+Using the following `first_words`:  
 `first_words = "define rifle cliff summer priority ability chimney cotton tennis crash husband try trophy ring cook portion drift stool thank ceiling notice lesson foam"`
 
-Creates the following output:
+Which generates the following output:
 ```
 PRIVATE SECRET TO WRITE DOWN:
 
@@ -34,6 +34,9 @@ PUBLIC KEY INFO TO LOAD INTO SPECTER-DESKTOP:
 ```
 
 ![](example.png)
+
+You can confirm this matches SeedPicker:  
+<http://seedpicker.net/calculator/last-word.html>
 
 ---
 
