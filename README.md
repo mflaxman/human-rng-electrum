@@ -14,6 +14,27 @@ first_words = "abandon abandon abandon abandon abandon abandon abandon abandon a
 
 **Note: it is strongly recommended to perform all these steps (including below) offline on an airgapped machine, preferably using [Tails](https://tails.boum.org/).**
 
+#### Example
+Using the folloiwng:
+`first_words = "define rifle cliff summer priority ability chimney cotton tennis crash husband try trophy ring cook portion drift stool thank ceiling notice lesson foam"`
+
+Creates the following output:
+```
+PRIVATE SECRET TO WRITE DOWN:
+
+  {
+    "last_word": "armed",
+    "whole_seed": "define rifle cliff summer priority ability chimney cotton tennis crash husband try trophy ring cook portion drift stool thank ceiling notice lesson foam armed",
+    "whole_seed_word_count": 24
+  }
+
+PUBLIC KEY INFO TO LOAD INTO SPECTER-DESKTOP:
+
+  [083AA3DB/48'/0'/0'/2']Zpub75bfxnas1XEzkrBtQS2G1SHXPhFbW647kkRgeuNGb4S3TucLW9YatuBR3XwzWioRma2zbr74Bf8Z767HYAQcQRQAvmmfigNLtXp1rpaAbhK
+```
+
+![](example.png)
+
 ---
 
 ## Build Steps For Trust Minimization
