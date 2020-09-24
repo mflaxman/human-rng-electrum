@@ -47,27 +47,33 @@ def calculate_seed_and_xpubs(first_words):
         },
     )
 
+has_firstwords = False
 try:
-    firstwords
+    first_words
+    has_firstwords = True
 except NameError:
-    print('`first_words` not supplied! You must first set first_words="foo" , where foo is the first 23 words of your seed phrase.')
+    print('\n`first_words` not supplied!')
+    print('You must first set first_words like this:')
+    print('firstwords = "able baby cake ..."')
+    print('Substitute your own first 23 words of your seed phrase (without ...) and run this command again', '\n')
 
 
-last_word_dict, specter_dict = calculate_seed_and_xpubs(first_words=first_words)
-result = "  [{}/{}]{}".format(
-    specter_dict["xfp"], specter_dict["p2wsh_deriv"][2:], specter_dict["p2wsh"]
-)
+if has_firstwords:
+    last_word_dict, specter_dict = calculate_seed_and_xpubs(first_words=first_words)
+    result = "  [{}/{}]{}".format(
+        specter_dict["xfp"], specter_dict["p2wsh_deriv"][2:], specter_dict["p2wsh"]
+    )
 
-print("\n", "*" * 99)
-print("Running on network %s...\n" % constants.net.__name__)
+    print("\n", "*" * 99)
+    print("Running on network %s...\n" % constants.net.__name__)
 
-# Write to coldcard xpub file (not needed, but can be useful to experts in airgap wallet creation)
-f_output = '/tmp/humanrngxp-%s.json' % specter_dict['xfp']
-with open(f_output, 'w') as f:
-    f.write(json.dumps(specter_dict, indent=4))
+    # Write to coldcard xpub file (not needed, but can be useful to experts in airgap wallet creation)
+    f_output = '/tmp/humanrngxp-%s.json' % specter_dict['xfp']
+    with open(f_output, 'w') as f:
+        f.write(json.dumps(specter_dict, indent=4))
 
-print("\nPRIVATE SECRET TO WRITE DOWN (%s words total):" % last_word_dict.pop("whole_seed_word_count"), "\n")
-print("  %s" % last_word_dict.pop("whole_seed"))
+    print("\nPRIVATE SECRET TO WRITE DOWN (%s words total):" % last_word_dict.pop("whole_seed_word_count"), "\n")
+    print("  %s" % last_word_dict.pop("whole_seed"))
 
-print("\n", "PUBLIC KEY INFO TO LOAD INTO SPECTER-DESKTOP (also saved to %s):" % f_output, "\n")
-print(result, "\n")
+    print("\n", "PUBLIC KEY INFO TO LOAD INTO SPECTER-DESKTOP (also saved to %s):" % f_output, "\n")
+    print(result, "\n")
