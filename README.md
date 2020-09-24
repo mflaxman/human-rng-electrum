@@ -37,6 +37,8 @@ PUBLIC KEY INFO TO LOAD INTO SPECTER-DESKTOP (also saved to /tmp/humanrngxp-669D
 You can confirm this matches SeedPicker:  
 <http://seedpicker.net/calculator/last-word.html>
 
+In order to run in testnet, you must [boot electrum in testnet mode](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/#testnet-mode).
+
 ---
 
 ## Build Steps For Trust Minimization
