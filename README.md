@@ -15,22 +15,21 @@ first_words = "abandon abandon abandon abandon abandon abandon abandon abandon a
 **Note: it is strongly recommended to perform all these steps (including below) offline on an airgapped machine, preferably using [Tails](https://tails.boum.org/).**
 
 #### Example
-Using the following `first_words`:  
-`first_words = "define rifle cliff summer priority ability chimney cotton tennis crash husband try trophy ring cook portion drift stool thank ceiling notice lesson foam"`
+Using the following **INSECURE** `first_words`:  
+`first_words = "zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo"`
 
 Which generates the following output:
 ```
-PRIVATE SECRET TO WRITE DOWN:
+***************************************************************************************************
+Running on network BitcoinMainnet...
 
-  {
-    "last_word": "armed",
-    "whole_seed": "define rifle cliff summer priority ability chimney cotton tennis crash husband try trophy ring cook portion drift stool thank ceiling notice lesson foam armed",
-    "whole_seed_word_count": 24
-  }
+PRIVATE SECRET TO WRITE DOWN (24 words total):
 
-PUBLIC KEY INFO TO LOAD INTO SPECTER-DESKTOP:
+  zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo zoo buddy
 
-  [083AA3DB/48'/0'/0'/2']Zpub75bfxnas1XEzkrBtQS2G1SHXPhFbW647kkRgeuNGb4S3TucLW9YatuBR3XwzWioRma2zbr74Bf8Z767HYAQcQRQAvmmfigNLtXp1rpaAbhK
+PUBLIC KEY INFO TO LOAD INTO SPECTER-DESKTOP (also saved to /tmp/humanrngxp-669DCE62.json):
+
+  [669DCE62/48'/0'/0'/2']Zpub74sb5KB3Ak1RwabGr8SHQnMTkd2mC3boVDgPf1jBFNxcXh7Nx4KV3XakPDtWLN5RpszdM7qcBN4wm7xreh8Ys2xYUBqQ9GtkTN8h5kRVecc
 ```
 
 ![](example.png)
