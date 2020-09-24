@@ -56,7 +56,7 @@ $ cat electrum.py | pbcopy
 Convert code in your clipboard to one-liner on this website:
 https://jagt.github.io/python-single-line-convert/
 
-Select `Python 3`, paste your code, and  hit `Convert`.
+Select `Python 3` radio button, paste your code, and  hit `Convert`.
 
 #### Save the Resulting File
 This is how [oneline.py](oneline.py) was created.
